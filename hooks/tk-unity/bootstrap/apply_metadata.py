@@ -1,6 +1,6 @@
 # Shotgun
 import sgtk
-from sg_client import GetUnityEditor
+import UnityEditor
 
 # misc
 import json
@@ -47,8 +47,6 @@ class UnityApplyMetadata(HookBaseClass):
         if not unity_metadata.relates_to_current_project(metadata):
             self.logger.warning('Not applying Shotgun metadata as it does not relate to the currently loaded project. Metadata = "{}")'.format(pprint.pformat(metadata)))
             
-            # TODO: could we call GetUnityEditor().EditorApplication.OpenProject?
-            #       What would be the effect on the bootstrap, domain reload, etc.?
             return
         
         # Find the scene to open
@@ -56,5 +54,5 @@ class UnityApplyMetadata(HookBaseClass):
             return
         
         # open the correct scene in Unity
-        GetUnityEditor().SceneManagement.EditorSceneManager.OpenScene(metadata.get('scene_path'))
+        UnityEditor.SceneManagement.EditorSceneManager.OpenScene(metadata.get('scene_path'))
         

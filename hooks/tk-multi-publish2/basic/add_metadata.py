@@ -1,5 +1,4 @@
-from sg_client import GetUnityEngine
-
+import UnityEngine
 import json
 import os
 import sgtk
@@ -44,7 +43,6 @@ class UnitySessionAddMetadataPlugin(HookBaseClass):
                 logger.critical("There is no text field 'sg_unity_metadata' on Version entity type. Create one to store Unity metadata when publishing a Version")
                 return
             else:
-                UnityEngine = GetUnityEngine()
                 data_path = UnityEngine.Application.dataPath
                 project_path = os.path.dirname(data_path)
                 
@@ -61,7 +59,6 @@ class UnitySessionAddMetadataPlugin(HookBaseClass):
                     { 'project_path'    : project_path, 
                       'scene_path'      : scene_path,
                       'metadata_version': _metadata_version } )
-
                 # Update the version entity with new metadata                
                 engine.shotgun.update('Version', version['id'], { 'sg_unity_metadata' : metadata_json } )
         

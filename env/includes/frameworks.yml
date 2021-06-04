@@ -17,7 +17,7 @@ frameworks:
   # adobe - Common functionality for adobe products
   tk-framework-adobe_v1.x.x:
     location:
-      version: v1.1.0
+      version: v1.1.2
       type: app_store
       name: tk-framework-adobe
 
@@ -38,13 +38,13 @@ frameworks:
   # desktopserver - provides a server to run local commands.
   tk-framework-desktopserver_v1.x.x:
     location:
-      version: v1.4.4
+      version: v1.4.7
       type: app_store
       name: tk-framework-desktopserver
   # qtwidgets - collection of Toolkit related QT Widgets
   tk-framework-qtwidgets_v2.x.x:
     location:
-      version: v2.9.3
+      version: v2.9.4
       type: app_store
       name: tk-framework-qtwidgets
 
@@ -58,7 +58,7 @@ frameworks:
   # shotgunutils v5 - Shotgun Related Utilities
   tk-framework-shotgunutils_v5.x.x:
     location:
-      version: v5.7.8
+      version: v5.7.10
       type: app_store
       name: tk-framework-shotgunutils
   # widget v0 - QT Widget Framework for Tank Apps (qtwidgets fw predecessor)
@@ -85,6 +85,6 @@ frameworks:
   # lmv - provides LMV conversion tools
   tk-framework-lmv_v0.x.x:
     location:
-      version: v0.1.2
+      version: v0.1.3
       type: app_store
       name: tk-framework-lmv

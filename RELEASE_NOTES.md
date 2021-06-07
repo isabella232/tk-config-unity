@@ -4,8 +4,7 @@
 
 This version requires:
 * tk-unity v1.1
-* Shotgun for Unity 1.0 (com.unity.integrations.shotgun)
-* Python for Unity 4.0.0-exp.5
+* Shotgun for Unity 1.1 (com.unity.integrations.shotgun)
 
 NEW FEATURES
 * Rebased on tk-config-default2 v1.3.19

@@ -1,5 +1,17 @@
 ﻿RELEASE NOTES
 
+**Version**: 1.3.19.1
+
+This version requires:
+* tk-unity v1.1
+* Shotgun for Unity 1.1 (com.unity.integrations.shotgun)
+
+NEW FEATURES
+* Rebased on tk-config-default2 v1.3.19
+* Clean install of Shotgun package
+* Clean uninstall of Shotgun package
+* API usage of python package updated to run in-process 
+
 **Version**: 1.2.9.2
 
 This version requires:

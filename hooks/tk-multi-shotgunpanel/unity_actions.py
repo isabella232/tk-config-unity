@@ -102,8 +102,6 @@ class UnityActions(HookBaseClass):
                       "Parameters: %s. Shotgun Data: %s" % (name, params, sg_data))
         
         if name == "jump_to_frame":
-            UnityEditor = UnityEditor
-            UnityEngine = UnityEngine
             
             # Open the scene
             metadata = params

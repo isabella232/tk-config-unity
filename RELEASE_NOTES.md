@@ -4,7 +4,7 @@
 
 This version requires:
 * tk-unity v1.1
-* Shotgun for Unity 1.1 (com.unity.integrations.shotgun)
+* Shotgrid for Unity 1.1 (com.unity.integrations.shotgrid)
 
 NEW FEATURES
 * Rebased on tk-config-default2 v1.3.19
